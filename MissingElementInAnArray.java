@@ -11,6 +11,8 @@
 
 package week3.day1.assignment;
 
+import java.util.Arrays;
+
 public class MissingElementInAnArray {
 
 	public static void main(String[] args) {
@@ -25,6 +27,16 @@ public class MissingElementInAnArray {
 			System.out.print(arr[i] + " ");
 			
 		}
+		
+		System.out.println();
+		System.out.print("Sorted array element : ");
+		Arrays.sort(arr);
+		for (int i=0; i<arrSize; i++)
+		{
+			System.out.print(arr[i] + " ");
+			
+		}
+		
 		System.out.println();
 		for (int i=1; i<arrSize;i++)
 		{
@@ -46,5 +58,6 @@ public class MissingElementInAnArray {
  output :
  Length of the Array : 7
 Array element : 1 2 3 4 7 6 8 
+Sorted array element : 1 2 3 4 6 7 8 
 Missing Array element : 5
 */
